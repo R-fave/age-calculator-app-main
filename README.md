@@ -49,4 +49,4 @@ Users should be able to:
 - Mobile-first workflow
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@R-fave](https://www.frontendmentor.io/profile/R-fave)
