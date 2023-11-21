@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 330px;
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 7em auto 4em auto;
+    padding: 3em 1em ;
+    border-radius: 20px 20px 200px 20px;
+}
+
+.input-sections{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div > i > p{
+    font-size: 9px;
+    margin: 0;
+}
+
+label{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+    
+}
+
+input[type=number]{
+    font-weight: 800 ;
+    font-size: 20px;
+    padding: .5em;
+    width: 85px;
+    height: 55px;
+    border: 2px solid  hsl(0, 0%, 94%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=number]:hover{
+    border: 2px solid  hsl(259, 100%, 65%);
+    transition-timing-function: ease-in-out; 
+    transition-duration: 1s; 
+}
+
+
+input[type=number]:active{
+    border: 2px solid  hsl(259, 100%, 65%);
+}
+
+#day::placeholder, #month::placeholder, #year::placeholder{
+    color: hsl(0, 1%, 44%);
+    opacity: 80%;
+}
+
+.button-div{
+    position: absolute;
+}
+
+.button-div > button{
+    margin: 10px auto;
+    display: block;
+    border: none;
+    padding: 1.3em;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    position: relative;
+    top: -105px;
+    left: 118px;
+    z-index: 1;
+}
+
+svg{
+    width: 35px;
+    height: 30px;
+}
+
+hr{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+.output> i > p{
+    font-size: 50px;
+    font-weight:800;
+    margin: 0;
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+    transition-timing-function: ease-in; 
+    transition-duration: 2s; 
+    transition-delay: 5ms;
+}
+
+.attribution > p{
+    font-weight: 700;
+}
+
+
+.invalid{
+    color: hsl(0, 100%, 67%); 
+    transition-timing-function: ease-in-out; 
+    transition-duration: 1s; 
+    transition-delay: 0ms;
+}
+
+@media(min-width: 502px){
+
+    main{
+        width: 550px;
+        margin: 4em auto 4em auto;
+        padding: 3em 3em ;
+    }
+
+    input[type=number]{
+        width: 125px;
+        height: 55px;
+        border: 2px solid  hsl(0, 0%, 94%);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    hr{
+        margin-top: 40px;
+        
+    }
+
+    .button-div > button{
+        top: -110px;
+        left: 480px;
+        margin: 0;
+    }
+
+    .output{
+        margin-top: -40px;
+    }
+
+    .output> i > p{
+        
+        padding: 0;
+        font-size: 75px;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 761px){
+    main{
+        width: 650px;
+        margin: 7em auto 4em auto;
+    }
+
+    .input-sections{
+        display: flex;
+        justify-content: left;
+        gap: 2em;
+    }
+
+    .button-div > button{
+        top: -100px;
+        left: 490px;
+        margin: 0;
+    }
+
+    .output{
+        margin-top: -20px;
+    }
+
+    input[type=number]{
+        font-size: 25px;
+        padding: .5em .8em;
+        border: 2px solid  hsl(0, 0%, 94%);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
